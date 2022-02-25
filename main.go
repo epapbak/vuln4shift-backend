@@ -11,6 +11,7 @@ func main() {
 		switch os.Args[1] {
 		case "database_admin":
 			database_admin.MigrateUp()
+			os.Args[1] = 1
 			return
 		}
 	}
